@@ -1,7 +1,8 @@
 .vscode/
 data/customer_set*.json
 data/customers_with_loans.json
-text-files/
+data/test_data.json
+draft-files/
 .env
 .prettierrc
 find_length.py
