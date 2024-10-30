@@ -1,5 +1,6 @@
 .vscode/
 data/customer_*.json
+data/customer_set_7_*.json
 data/customers_with_loans.json
 data/test_data.json
 data/customers_sample.json
