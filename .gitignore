@@ -2,7 +2,9 @@
 data/customer_set*.json
 data/customers_with_loans.json
 data/test_data.json
+data/customers_sample.json
 draft-files/
+src/sql-scripts/
 .env
 .prettierrc
 find_length.py
