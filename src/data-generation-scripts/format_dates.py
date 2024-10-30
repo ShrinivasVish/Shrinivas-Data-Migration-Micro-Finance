@@ -40,11 +40,11 @@ def process_json(input_file, output_file, keys_to_transform):
         json.dump(data, file, indent=4)
 
 
-input_json_file = "../../data/loan_repayments.json"  # Replace with your input JSON file
+input_json_file = "../../data/customer_set_7.json"  # Replace with your input JSON file
 output_json_file = (
-    "../../data/loan_repayments.json"  # Updated output file to avoid overwriting
+    "../../data/customer_set_7_updated.json"  # Updated output file to avoid overwriting
 )
-keys_to_convert = ["repayment_date"]  # Replace with the keys you want to transform
+keys_to_convert = ["joined_date"]  # Replace with the keys you want to transform
 
 process_json(input_json_file, output_json_file, keys_to_convert)
 print(f"Processed JSON written to {output_json_file}.")
