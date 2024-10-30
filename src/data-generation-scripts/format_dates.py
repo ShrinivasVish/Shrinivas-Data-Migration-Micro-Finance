@@ -41,9 +41,7 @@ def process_json(input_file, output_file, keys_to_transform):
 
 
 input_json_file = "../../data/customer_set_7.json"  # Replace with your input JSON file
-output_json_file = (
-    "../../data/customer_set_7_updated.json"  # Updated output file to avoid overwriting
-)
+output_json_file = "../../data/customer_set_7_with_UTC_dates.json"  # Updated output file to avoid overwriting
 keys_to_convert = ["joined_date"]  # Replace with the keys you want to transform
 
 process_json(input_json_file, output_json_file, keys_to_convert)
