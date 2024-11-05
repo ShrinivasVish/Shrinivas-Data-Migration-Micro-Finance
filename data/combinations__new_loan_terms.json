@@ -1,0 +1,82 @@
+[
+    {
+        "new_loan_term_id": 1,
+        "interest_rate": 3,
+        "repayment_period_in_months": 36
+    },
+    {
+        "new_loan_term_id": 2,
+        "interest_rate": 3,
+        "repayment_period_in_months": 48
+    },
+    {
+        "new_loan_term_id": 3,
+        "interest_rate": 3,
+        "repayment_period_in_months": 60
+    },
+    {
+        "new_loan_term_id": 4,
+        "interest_rate": 3,
+        "repayment_period_in_months": 72
+    },
+    {
+        "new_loan_term_id": 5,
+        "interest_rate": 4,
+        "repayment_period_in_months": 36
+    },
+    {
+        "new_loan_term_id": 6,
+        "interest_rate": 4,
+        "repayment_period_in_months": 48
+    },
+    {
+        "new_loan_term_id": 7,
+        "interest_rate": 4,
+        "repayment_period_in_months": 60
+    },
+    {
+        "new_loan_term_id": 8,
+        "interest_rate": 4,
+        "repayment_period_in_months": 72
+    },
+    {
+        "new_loan_term_id": 9,
+        "interest_rate": 5,
+        "repayment_period_in_months": 36
+    },
+    {
+        "new_loan_term_id": 10,
+        "interest_rate": 5,
+        "repayment_period_in_months": 48
+    },
+    {
+        "new_loan_term_id": 11,
+        "interest_rate": 5,
+        "repayment_period_in_months": 60
+    },
+    {
+        "new_loan_term_id": 12,
+        "interest_rate": 5,
+        "repayment_period_in_months": 72
+    },
+    {
+        "new_loan_term_id": 13,
+        "interest_rate": 6,
+        "repayment_period_in_months": 36
+    },
+    {
+        "new_loan_term_id": 14,
+        "interest_rate": 6,
+        "repayment_period_in_months": 48
+    },
+    {
+        "new_loan_term_id": 15,
+        "interest_rate": 6,
+        "repayment_period_in_months": 60
+    },
+    {
+        "new_loan_term_id": 16,
+        "interest_rate": 6,
+        "repayment_period_in_months": 72
+    }
+]

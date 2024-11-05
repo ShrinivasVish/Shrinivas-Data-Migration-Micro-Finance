@@ -1,0 +1,218 @@
+[
+    {
+        "restructure_term_id": 1,
+        "reason": "Financial difficulties",
+        "new_schedule": "Monthly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 2,
+        "reason": "Financial difficulties",
+        "new_schedule": "Monthly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 3,
+        "reason": "Financial difficulties",
+        "new_schedule": "Monthly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 4,
+        "reason": "Financial difficulties",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 5,
+        "reason": "Financial difficulties",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 6,
+        "reason": "Financial difficulties",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 7,
+        "reason": "Financial difficulties",
+        "new_schedule": "Quarterly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 8,
+        "reason": "Financial difficulties",
+        "new_schedule": "Quarterly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 9,
+        "reason": "Financial difficulties",
+        "new_schedule": "Quarterly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 10,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Monthly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 11,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Monthly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 12,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Monthly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 13,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 14,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 15,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 16,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Quarterly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 17,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Quarterly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 18,
+        "reason": "Interest rate reduction",
+        "new_schedule": "Quarterly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 19,
+        "reason": "Change in income",
+        "new_schedule": "Monthly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 20,
+        "reason": "Change in income",
+        "new_schedule": "Monthly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 21,
+        "reason": "Change in income",
+        "new_schedule": "Monthly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 22,
+        "reason": "Change in income",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 23,
+        "reason": "Change in income",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 24,
+        "reason": "Change in income",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 25,
+        "reason": "Change in income",
+        "new_schedule": "Quarterly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 26,
+        "reason": "Change in income",
+        "new_schedule": "Quarterly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 27,
+        "reason": "Change in income",
+        "new_schedule": "Quarterly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 28,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Monthly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 29,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Monthly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 30,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Monthly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 31,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 32,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 33,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Bi-weekly payments",
+        "concessions": "Payment deferral for 1 month"
+    },
+    {
+        "restructure_term_id": 34,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Quarterly payments",
+        "concessions": "2-month grace period"
+    },
+    {
+        "restructure_term_id": 35,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Quarterly payments",
+        "concessions": "No late fees for 3 months"
+    },
+    {
+        "restructure_term_id": 36,
+        "reason": "Unexpected expenses",
+        "new_schedule": "Quarterly payments",
+        "concessions": "Payment deferral for 1 month"
+    }
+]
