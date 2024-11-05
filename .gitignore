@@ -6,6 +6,8 @@ data/test_data.json
 data/customers_sample.json
 draft-files/
 src/sql-scripts/
+diagrams/Schemas-And-Relationships-JPG.jpg
 .env
 .prettierrc
 find_length.py
+__pycache__/
