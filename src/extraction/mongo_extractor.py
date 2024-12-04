@@ -43,7 +43,7 @@ class MongoExtractor:
         """Convert a date string to a datetime object adjusted to IST."""
         if date_str is not None:
             # Parse the date string
-            date_obj = datetime.fromisoformat(date_str)
+            date_obj = datetime.fromisoformat(str(date_str))
             # Adjust to IST (UTC+5:30)
             ist_time = date_obj + timedelta(hours=5, minutes=30)
             return ist_time
@@ -123,12 +123,12 @@ class MongoExtractor:
         collection = self.db[collection_name]
         unique_id_key_col = unique_id_mapping[collection_name]["unique_id_key_col"]
 
-        document = collection.find_one({unique_id_key_col: document[unique_id_key_col]})
+        update = collection.find_one({unique_id_key_col: update[unique_id_key_col]})
 
         # Convert dates and set timestamps
         for date_key in date_keys:
-            if date_key in document:
-                document[date_key] = self.convert_to_ist(document[date_key])
+            if date_key in update:
+                update[date_key] = self.convert_to_ist(update[date_key])
 
         query = {unique_id_key_col: unique_id_value}
         update["modified_at"] = datetime.now(timezone.utc)

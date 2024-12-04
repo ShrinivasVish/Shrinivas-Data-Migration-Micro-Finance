@@ -35,7 +35,9 @@ def main():
     # FULL LOAD
     # 5. Load that data into the PostgreSQL database tables
     for collection, df in dataframes.items():
-        postgres_loader.load_dataframe_to_postgres(df, f"tbl_{collection}")
+        postgres_loader.load_dataframe_to_postgres(
+            df, unique_id_mapping[collection]["table_name"]
+        )
 
     # 6. Execute the normalization function for loan restructuring
     transformer.normalize_loan_restructuring()

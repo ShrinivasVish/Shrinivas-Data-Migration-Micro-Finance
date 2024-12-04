@@ -29,10 +29,10 @@ class PostgresLoader:
         self.db = self.mongo_client[self.mongo_db_database_name]
 
         # PostgreSQL parameters
-        self.pg_host = os.getenv("PG_HOST")
         self.pg_database = os.getenv("PG_DATABASE")
         self.pg_user = os.getenv("PG_USER")
         self.pg_password = os.getenv("PG_PASSWORD")
+        self.pg_host = os.getenv("PG_HOST")
         self.pg_port = os.getenv("PG_PORT")
         self.pg_connection = self.create_pg_connection()
 
@@ -55,25 +55,22 @@ class PostgresLoader:
     def load_dataframe_to_postgres(
         self, df: pd.DataFrame, table_name: str, json_columns: list = []
     ):
-        """
-        Writes a pandas DataFrame to a PostgreSQL table, with support for JSON fields.
-
-        Parameters:
-        df (pd.DataFrame): The DataFrame to be written to PostgreSQL.
-        table_name (str): The name of the PostgreSQL table where data will be inserted.
-        json_columns (list): List of column names in the DataFrame that contain JSON data.
-        """
         connection = self.create_pg_connection()
+        if not connection:
+            print("Failed to establish database connection.")
+            return
+
         cursor = connection.cursor()
+        connection.set_session(autocommit=True)  # Ensure autocommit is enabled
 
         if "_id" in df.columns:
             df.drop(columns=["_id"], inplace=True)
 
         for column in json_columns:
-            df[column] = df[column].apply(json.dumps)
+            if column in df.columns:
+                df[column] = df[column].apply(json.dumps)
 
         columns = df.columns.tolist()
-        print(columns)
         insert_query = sql.SQL("INSERT INTO {} ({}) VALUES ({})").format(
             sql.Identifier(table_name),
             sql.SQL(", ").join(map(sql.Identifier, columns)),
@@ -84,17 +81,25 @@ class PostgresLoader:
         )
 
         data_tuples = [tuple(row) for row in df.itertuples(index=False)]
+        print(f"Insert query: {insert_query.as_string(cursor)}")
+        print(f"Number of rows to insert: {len(data_tuples)}")
 
+        batch_size = 1000
         try:
-            cursor.executemany(insert_query, data_tuples)
-            connection.commit()
-            print(f"Data successfully loaded into {table_name} table.")
+            for i in range(0, len(data_tuples), batch_size):
+                batch = data_tuples[i : i + batch_size]
+                cursor.executemany(insert_query, batch)
+                connection.commit()  # Explicit commit after each batch
+                print(
+                    f"Inserted batch {i // batch_size + 1} with {len(batch)} records."
+                )
         except Exception as error:
             print(f"Error inserting data into PostgreSQL: {error}")
             connection.rollback()
         finally:
             cursor.close()
             connection.close()
+            print("Connection closed.")
 
     def update_record_in_postgres(
         self,

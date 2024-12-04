@@ -51,7 +51,7 @@ for reason in restructure_reasons:
 combinations__new_loan_terms_json = json.dumps(
     unique_combinations__new_loan_terms, indent=4
 )
-output_path = "../../data/combinations__new_loan_terms.json"
+output_path = "../../data/new_loan_terms.json"
 with open(output_path, "w") as f:
     f.write(combinations__new_loan_terms_json)
 
@@ -60,6 +60,6 @@ with open(output_path, "w") as f:
 combinations__restructure_terms_json = json.dumps(
     unique_combinations__restructure_terms, indent=4
 )
-output_path = "../../data/combinations__restructure_terms.json"
+output_path = "../../data/restructure_terms.json"
 with open(output_path, "w") as f:
     f.write(combinations__restructure_terms_json)
